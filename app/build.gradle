@@ -37,7 +37,7 @@ repositories {
 }
 
 apply plugin: "com.android.application"
-apply plugin: "android-scala-support"
+apply plugin: "com.github.kright.android-scala-support"
 
 
 android {
@@ -126,10 +126,6 @@ android {
             proguardFiles 'proguard-rules.txt'
             testProguardFile 'proguard-rules.txt'
         }
-    }
-
-    sourceSets {
-        main.java.srcDirs = ["src/main/java", "src/main/scala"]
     }
 }
 
